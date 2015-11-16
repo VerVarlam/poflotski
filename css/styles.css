@@ -15,16 +15,7 @@ body{
 
 .container{}
 
-.p_text {
-  position: relative;
-  top: 30%;
-  height: 100%;
-  text-align: left;
-  z-index: 8;
-  font-family: Helvetica, sans-serif;
-  font-size: 0.1 em;
-  color: #e5cea9;
-}
+
 
 img {
   display: block;
@@ -145,9 +136,9 @@ img {
   width: 110%;
   z-index: 4;
   opacity: 1.0;
-  -moz-animation: 6s ease 0s normal none infinite swing;
+  -moz-animation: 6s ease 0s normal none infinite swing2;
   -moz-transform-origin:center;
-  -webkit-animation:swing 6s infinite ease-in-out;
+  -webkit-animation:swing2 6s infinite ease-in-out;
   -webkit-transform-origin:bottom;
 }
 
@@ -161,6 +152,19 @@ img {
     0%{-webkit-transform:rotate(-2deg)}
     50%{-webkit-transform:rotate(2deg)}
     100%{-webkit-transform:rotate(-2deg)}
+
+}
+
+@-moz-keyframes swing2{
+    0%{-moz-transform:rotate(-3deg)}
+    50%{-moz-transform:rotate(4deg)}
+    100%{-moz-transform:rotate(-3deg)}
+}
+
+@-webkit-keyframes swing2{
+    0%{-webkit-transform:rotate(-3deg)}
+    50%{-webkit-transform:rotate(4deg)}
+    100%{-webkit-transform:rotate(-3deg)}
 
 }
 
@@ -189,14 +193,14 @@ z-index: 8;}
 #popup {
   display: block;
   position: fixed;
-  margin-left: 30%;
+  margin-left: 25%;
   margin-top: 10%;
   cursor: -moz-zoom-in;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
-  width: 40%;
-  height: 40%;
-  z-index: 999;
+  width: 60%;
+  height: 60%;
+  z-index: 966;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -213,10 +217,10 @@ z-index: 8;}
   display: block;
   position: fixed;
   margin-left: 3%;
-  margin-top: 140%;
+  margin-top: 120%;
   width:20%;
   height:20%;
-  z-index: 7;
+  z-index: 10;
   cursor: -moz-zoom-in;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
@@ -227,31 +231,31 @@ z-index: 8;}
 opacity: 0.5;
 }
 
-#butilka {
+#bottle {
   display: block;
   position: fixed;
-  margin-left: 80%;
-  margin-top: 100%;
-  width:15%;
-  height:15%;
-  z-index: 7;
+  margin-left: 78%;
+  margin-top: 112%;
+  width:20%;
+  height:20%;
+  z-index: 980;
   cursor: -moz-zoom-in;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
   transition: opacity 0.5s ease;
 }
 
-#butilka:hover {
+#bottle:hover {
 opacity: 0.5;
 }
 
 #k_popup {
   position:absolute;
-  margin-left: 20%;
-  margin-top: 105%;
-  width:40%;
-  height:40%;
-  z-index: 7;
+  margin-left: 15%;
+  margin-top: 100%;
+  width:50%;
+  height:50%;
+  z-index: 800;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -262,20 +266,58 @@ opacity: 0.5;
 }
 
 #b_popup {
-  background-image: url("../images2/bottle_p.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   display:block;
   position:absolute;
-  margin-left: 40%;
-  margin-top: 100%;
-  z-index: 7;
+  margin-left: 30%;
+  margin-top: 95%;
+  width:50%;
+  height:50%;
+  z-index: 900;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 
 #b_popup.active {
   opacity: 1;
+}
+
+.p_text {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  padding-right: 30%;
+  text-align: left;
+  z-index: 999;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  line-height: 1.2em;
+  font-size: 0.74em;
+  color: #a66f4e;}
+
+a {
+  text-decoration: underline;
+  color: #a66f4e;
+  }
+
+a:hover {
+color: #205959;}
+
+.kostrula {
+  top: 45%;
+  padding-right: 44%;
+}
+
+.vera {
+  top: 38.5%;
+  padding-right: 45.3%;
+}
+
+.fedor {
+  text-align: left;
+  top: 33.5%;
+  left:55.4%;
+  padding-right: 17%;
 }
 
 #ingredients {
