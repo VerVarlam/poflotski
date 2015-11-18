@@ -24,8 +24,8 @@
   data-friction-y="0.2"
   data-origin-x="0.0"
   data-origin-y="1.0">
-  <li class="layer" id="lights" data-depth="0.40"><img src="images/lights.png"></li>
-  <li class="layer" id="logo" data-depth="0.60"><img src="images/logo.png"></li>
+  <li class="layer" id="lights" data-depth="0.60"><img src="images/lights.png"></li>
+  <li class="layer" id="logo" data-depth="0.50"><img src="images/logo.png"></li>
   <li class="layer" id="sailor" data-depth="0.20"><img src="images/sailor.png"></li>
   <li class="layer" id="popup" data-depth="0.55"><div><img src="images2/pop_up.png"><div class="p_text vera">
   <p>По причине ли своего имени, али потому, что столь много плаваний позади, <a href="https://www.behance.net/varlamovav/" target="_blank">Вера</a> всегда
@@ -82,15 +82,16 @@
       feed.run();
   </script>
 
-  <script>$("#popup").click(function(){
+  <script>
+  $('#k_popup, #b_popup').hide();
+
+  $('#kulon, #bottle').click(function() {
+      var cls = $(this).attr('id');
+      $('#k_popup, #b_popup' + cls).toggle();
+  })
+  $("#popup").click(function(){
      jQuery(this).toggleClass('active');
   });
-  $("#kulon").click(function () {
-      $("#k_popup").toggleClass('active');
-    });
-    $("#bottle").click(function () {
-          $("#b_popup").toggleClass('active');
-        });
       </script>
 
 
