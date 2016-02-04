@@ -1,0 +1,361 @@
+html {overflow-x: hidden;}
+
+body{
+  padding: 0;
+  margin:0;
+  background-image: url("../images/bg.png");
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+.container{}
+
+
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#lights {
+  opacity: 0.7;
+  position: fixed;
+  margin-left:0%;
+  margin-top: -5%;
+  width:120%;
+  height:120%;
+  z-index: 150;
+  mix-blend-mode: overlay;
+}
+
+
+#logo{
+  position: fixed;
+  margin-top: 5%;
+  margin-left: 30%;
+  width:40%;
+  height:40%;
+  z-index: 100;
+}
+
+#lighter{
+  position: fixed;
+  margin-top: 36%;
+  margin-left: 80%;
+  width:5%;
+  height:5%;
+  z-index: 3;
+  -moz-animation: 3s ease 0s normal none infinite swing;
+  -moz-transform-origin:center;
+  -webkit-animation:swing 3s infinite ease-in-out;
+  -webkit-transform-origin:bottom;
+}
+
+#birds{
+  position: fixed;
+  margin-top: 24%;
+  margin-left: 16%;
+  width:80%;
+  height:80%;
+  z-index: 5;
+}
+
+
+#sailor {
+  margin-left: -8%;
+  margin-top: 18%;
+  width:120%;
+  height:120%;
+  z-index: 28;
+}
+
+#clouds {
+  position: fixed;
+  margin-left: 0%;
+  margin-top: 0%;
+  width:100%;
+  height:100%;
+  z-index: 20;
+}
+
+#seagull1
+{
+  position: fixed;
+  margin-left: 70%;
+  margin-top: 44%;
+  width:40%;
+  height:40%;
+  z-index: 30;
+}
+
+#seagull2
+{
+  position: fixed;
+  margin-left: 0%;
+  margin-top: 71%;
+  width:30%;
+  height:30%;
+  z-index: 30;
+}
+
+#ropes
+{
+  display: block;
+  position: fixed;
+  margin-left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 25;
+}
+
+#wave {
+  display: block;
+  position: fixed;
+  margin-left: 0;
+  margin-top: 40%;
+  width: 110%;
+  z-index: 4;
+  opacity: 1.0;
+}
+
+#wave2 {
+  display: block;
+  position: fixed;
+  margin-left: 0;
+  margin-top: 42%;
+  width: 110%;
+  z-index: 4;
+  opacity: 1.0;
+  -moz-animation: 6s ease 0s normal none infinite swing2;
+  -moz-transform-origin:center;
+  -webkit-animation:swing2 6s infinite ease-in-out;
+  -webkit-transform-origin:bottom;
+}
+
+#wave3 {
+  display: block;
+  position: fixed;
+  margin-left: 0;
+  margin-top: 42%;
+  width: 110%;
+  z-index: 4;
+  opacity: 1.0;
+  -moz-animation: 6s ease 0s normal none infinite swing3;
+  -moz-transform-origin:center;
+  -webkit-animation:swing3 6s infinite ease-in-out;
+  -webkit-transform-origin:bottom;
+}
+
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-6deg)}
+    50%{-moz-transform:rotate(6deg)}
+    100%{-moz-transform:rotate(-6deg)}
+}
+
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-6deg)}
+    50%{-webkit-transform:rotate(6deg)}
+    100%{-webkit-transform:rotate(-6deg)}
+
+}
+
+@-moz-keyframes swing2{
+    0%{-moz-transform:rotate(-1deg)}
+    50%{-moz-transform:rotate(1deg)}
+    100%{-moz-transform:rotate(-1deg)}
+}
+
+@-webkit-keyframes swing2{
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+
+@-moz-keyframes swing3{
+    0%{-moz-transform:rotate(-2deg)}
+    50%{-moz-transform:rotate(2deg)}
+    100%{-moz-transform:rotate(-2deg)}
+}
+
+@-webkit-keyframes swing3{
+    0%{-webkit-transform:rotate(-2deg)}
+    50%{-webkit-transform:rotate(2deg)}
+    100%{-webkit-transform:rotate(-2deg)}
+}
+
+#wave3 {
+  display: block;
+  position: fixed;
+  margin-left: 0;
+  margin-top: 42%;
+  width: 110%;
+  z-index: 4;
+  opacity: 1.0;
+  -moz-animation: 6s ease 0s normal none infinite swing;
+  -moz-transform-origin:center;
+  -webkit-animation:swing 6s infinite ease-in-out;
+  -webkit-transform-origin:bottom;
+}
+
+
+#instag {
+display: block;
+position: fixed;
+margin-left: 40%;
+margin-top: 175%;
+z-index: 8;}
+
+#popup {
+  display: block;
+  position: fixed;
+  margin-left: 25%;
+  margin-top: 10%;
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  width: 60%;
+  height: 60%;
+  z-index: 966;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#popup:active {
+  opacity: 1;
+}
+
+#popup.active {
+  opacity: 1;
+}
+
+#kulon {
+  display: block;
+  position: fixed;
+  margin-left: 3%;
+  margin-top: 120%;
+  width:20%;
+  height:20%;
+  z-index: 10;
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  transition: opacity 0.5s ease;
+}
+
+#kulon:hover {
+opacity: 0.5;
+}
+
+#bottle {
+  display: block;
+  position: fixed;
+  margin-left: 78%;
+  margin-top: 112%;
+  width:20%;
+  height:20%;
+  z-index: 980;
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  transition: opacity 0.5s ease;
+}
+
+#bottle:hover {
+opacity: 0.5;
+}
+
+#k_popup {
+  position:absolute;
+  margin-left: 15%;
+  margin-top: 100%;
+  width:50%;
+  height:50%;
+  z-index: 800;
+  transition: opacity 0.5s ease;
+}
+
+#b_popup {
+  position:absolute;
+  margin-left: 30%;
+  margin-top: 95%;
+  width:50%;
+  height:50%;
+  z-index: 900;
+  transition: opacity 0.5s ease;
+}
+
+.p_text {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  padding-right: 30%;
+  text-align: left;
+  z-index: 999;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  line-height: 1.2em;
+  font-size: 0.74em;
+  color: #a66f4e;}
+
+a {
+  text-decoration: underline;
+  color: #a66f4e;
+  }
+
+a:hover {
+color: #205959;}
+
+.kostrula {
+  top: 45%;
+  padding-right: 44%;
+}
+
+.vera {
+  top: 38.5%;
+  padding-right: 45.3%;
+}
+
+.fedor {
+  text-align: left;
+  top: 33.5%;
+  left:55.4%;
+  padding-right: 17%;
+}
+
+#ingredients {
+  display: block;
+  position: fixed;
+  margin-left: 27%;
+  margin-top: 52%;
+  width: 46%;
+  height: 46%;
+  z-index: 29;
+}
+
+#recipe {
+  display: block;
+  position: fixed;
+  margin-left: 29%;
+  margin-top: 104%;
+  width: 46%;
+  height: 46%;
+  z-index: 29;
+}
+
+#appetite {
+  display: block;
+  position: fixed;
+  margin-left: 29%;
+  margin-top: 165%;
+  width: 46%;
+  height: 46%;
+  z-index: 29;
+}

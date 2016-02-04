@@ -85,10 +85,17 @@
   <script>
   $('#k_popup, #b_popup').hide();
 
-  $('#kulon, #bottle').click(function() {
-      var cls = $(this).attr('id');
-      $('#k_popup, #b_popup' + cls).toggle();
-  })
+  $('#kulon').click(function() {
+      $('#k_popup').toggle();
+      if ($('#b_popup').is(":visible")) {
+      $('#b_popup').hide();}
+  });
+  $('#bottle').click(function() {
+      $('#b_popup').toggle();
+      if ($('#k_popup').is(":visible")) {
+      $('#k_popup').hide();
+      }
+  });
   $("#popup").click(function(){
      jQuery(this).toggleClass('active');
   });
